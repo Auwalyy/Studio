@@ -1,60 +1,75 @@
 import React from "react";
-import { PlayCircle, Laptop } from "lucide-react";
-import studentImg from "../assets/student.png";
-import groupImg from "../assets/group.jpg";
+import girlImage from "../assets/student.png";
+import groupImage from "../assets/group.jpg";
+import { PlayCircle } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="w-full bg-[#35689F] text-white flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-12 md:py-20 overflow-hidden">
-      {/* Left Text Section */}
-      <div className="max-w-xl text-center md:text-left space-y-6">
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-          Best Platform Improve <br /> Your Learning Skills.
-        </h1>
-        <p className="text-base md:text-lg text-gray-200">
-          Edufit offers comprehensive courses, interactive quizzes, and peer
-          reviewed assignments to enhance learning skills across various.
-        </p>
+    <section className="bg-[#346699] w-full flex justify-center items-center py-16 px-6 md:px-16 lg:px-24 overflow-hidden">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full max-w-7xl">
+        {/* LEFT CONTENT */}
+        <div className="text-white max-w-xl lg:max-w-lg">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
+            Best Platform Improve <br /> Your Learning Skills.
+          </h1>
+          <p className="text-base md:text-lg text-gray-200 mb-6">
+            Edufit offers comprehensive courses, interactive quizzes, and peer
+            reviewed assignments to enhance learning skills across various.
+          </p>
 
-        <button className="bg-white text-[#35689F] font-medium px-6 py-3 rounded-md shadow-md hover:bg-gray-100 transition">
-          Get Started
-        </button>
-      </div>
-
-      {/* Right Image Section with Play Icon */}
-      <div className="relative mt-10 md:mt-0 flex justify-center md:justify-end w-full md:w-1/2">
-        <div className="relative">
-          <img
-            src={studentImg}
-            alt="Student"
-            className="w-[400px] md:w-[500px] lg:w-[600px] object-contain z-10"
-          />
-          {/* Play Icon on top of student image */}
-          <button className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <PlayCircle className="w-16 h-16 text-white/90 hover:scale-110 transition-transform" />
+          <button className="bg-white text-[#346699] font-semibold py-3 px-6 rounded-md shadow-md hover:bg-gray-100 transition">
+            Get Started
           </button>
         </div>
 
-        {/* Floating Card */}
-        <div className="absolute top-10 right-4 bg-white text-gray-900 px-5 py-4 rounded-xl shadow-lg flex items-center gap-3">
-          <div className="bg-[#E5EEFB] p-3 rounded-full">
-            <Laptop className="w-6 h-6 text-[#35689F]" />
-          </div>
-          <div>
-            <h3 className="text-base font-semibold">Online Classes</h3>
-            <p className="text-sm text-gray-500">Flexible online classes</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Group Image - Centered below both sections */}
-      <div className="mt-12 w-full flex justify-center">
-        <div className="relative w-full max-w-2xl rounded-lg overflow-hidden shadow-lg">
+        {/* RIGHT IMAGE SECTION */}
+        <div className="relative w-full flex justify-center lg:justify-end mb-12 lg:mb-0">
+          {/* Girl Image */}
           <img
-            src={groupImg}
-            alt="Students learning"
-            className="object-cover w-full h-48 md:h-56"
+            src={girlImage}
+            alt="student"
+            className="w-[680px] md:w-[740px] lg:w-[800px] xl:w-[860px] h-auto object-contain"
           />
+
+          {/* Floating Online Classes Card */}
+          <div className="absolute top-[30%] right-[5%] bg-white rounded-xl shadow-lg px-6 py-5 flex items-center gap-3">
+            <div className="bg-[#E3EEFF] p-3 rounded-lg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 text-[#346699]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M12 14l9-5-9-5-9 5 9 5z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M12 14l6.16-3.422A12.083 12.083 0 016.84 10.578L12 14z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-800">Online Classes</h3>
+              <p className="text-sm text-gray-500">Flexible online classes</p>
+            </div>
+          </div>
+
+          {/* Floating Group Image (bottom-left of the girl image) */}
+          <div className="absolute bottom-[3%] right-[-10%] left-[-10%] md:left-[-10%] lg:left-[-15%] rounded-xl overflow-hidden shadow-xl w-50 md:w-72 lg:w-[300px]">
+            <img
+              src={groupImage}
+              alt="group"
+              className="w-[500px] h-full object-cover"
+            />
+          
+          </div>
         </div>
       </div>
     </section>

@@ -16,11 +16,11 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Links */}
-        <ul className="hidden md:flex items-center gap-10">
+        <ul className="hidden md:flex text-[#336699CC] items-center gap-10">
           <li>
             <a
               href="#home"
-              className="text-gray-700 hover:text-[#346699] font-medium transition"
+              className="hover:text-[#346699] font-medium transition"
             >
               Home
             </a>
@@ -28,7 +28,7 @@ const Navbar = () => {
           <li>
             <a
               href="#courses"
-              className="text-gray-700 hover:text-[#346699] font-medium transition"
+              className="hover:text-[#346699] font-medium transition"
             >
               Courses
             </a>
@@ -36,7 +36,7 @@ const Navbar = () => {
           <li>
             <a
               href="#about"
-              className="text-gray-700 hover:text-[#346699] font-medium transition"
+              className="hover:text-[#346699] font-medium transition"
             >
               About
             </a>
@@ -44,7 +44,7 @@ const Navbar = () => {
           <li>
             <a
               href="#contact"
-              className="text-gray-700 hover:text-[#346699] font-medium transition"
+              className="hover:text-[#346699] font-medium transition"
             >
               Contact
             </a>

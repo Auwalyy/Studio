@@ -50,9 +50,9 @@ const Course = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Featured Courses</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Discover our most popular courses designed to enhance your learning journey
+          <h2 className="text-[30px] font-bold text-[#336699CC] mb-4">Courses</h2>
+          <p className="text-[40px]  text-black max-w-2xl mx-auto">
+            Explore Other <span className="text-[#336699CC] font-bold">Courses</span>
           </p>
         </div>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import arrow from '../assets/arrow.png';
 
 const Testimonials = () => {
   const testimonials = [
@@ -22,8 +23,8 @@ const Testimonials = () => {
         
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl text-[#336699CC] font-bold text-gray-900 mb-4">Testimonials</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-[40px] text-[#336699CC] font-bold  mb-4">Testimonials</h2>
+          <p className="text-[30px] font-bold text-black max-w-2xl mx-auto">
             What Our <span className='text-[#336699CC]'>Learners</span> Say
           </p>
         </div>
@@ -73,18 +74,8 @@ const Testimonials = () => {
         {/* Navigation Arrows */}
         <div className="flex justify-center items-center space-x-4">
           {/* Left Arrow */}
-          <button className="w-12 h-12 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors duration-200">
-            <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-
-          {/* Right Arrow */}
-          <button className="w-12 h-12 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors duration-200">
-            <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+          <img src={arrow} className="w-[240px] h-[60px] cursor-pointer" />
+         
         </div>
       </div>
     </section>

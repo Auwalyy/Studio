@@ -15,14 +15,12 @@ const CoursesSection = () => {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 md:px-12 text-center">
         {/* Section Title */}
-        <h3 className="text-[#346699] font-semibold text-lg uppercase tracking-wide">
+        
+        <h2 className="text-4xl md:text-5xl font-bold text-[#336699CC] mt-2">
           Modules
-        </h3>
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-2">
-          Course Section
         </h2>
-        <p className="text-gray-600 text-lg mt-4">
-          Explore our structured courses to enhance your skills.
+        <p className="text-black text-[35px] font-bold mt-4">
+          Course Sections
         </p>
 
         {/* Cards Grid */}

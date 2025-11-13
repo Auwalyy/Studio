@@ -32,7 +32,7 @@ const AboutSection = () => {
           </h3>
 
           <h2 className="text-4xl md:text-5xl font-bold leading-tight text-gray-900">
-            Welcome to our Online <br /> Learning Hub
+            Welcome to our Online <br /> <span className="  text-[#336699CC]">Learning</span> Hub
           </h2>
 
           <p className="text-gray-600 text-lg leading-relaxed">
@@ -64,17 +64,17 @@ const AboutSection = () => {
           </div>
 
           {/* Button + Profile Card */}
-          <div className="flex items-center gap-6 mt-6">
-            <button className="bg-[#346699] text-white px-6 py-3 rounded-md font-medium hover:bg-[#28527a] transition">
+          <div className="flex items-center gap-12 mt-6">
+            <button className="bg-[#346699] text-white px-8 py-5 rounded-md font-medium hover:bg-[#28527a] transition">
               Learn More
             </button>
 
             {/* Profile Card */}
-            <div className="flex items-center gap-4 bg-[#f4f8ff] p-1 rounded-xl shadow-sm">
+            <div className="flex items-center gap-6 bg-[#f4f8ff] p-2 rounded-xl shadow-sm">
               <img
                 src={profile}
                 alt="Profile"
-                className="w-full h-12 rounded-full object-cover"
+                className="w-full h-14 rounded-full object-cover"
               />
             
             </div>

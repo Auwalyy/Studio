@@ -2,14 +2,17 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-// https://vite.dev/config/
+const isVercel = process.env.VERCEL === '1'
+
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-
-   css: {
-    transformer: 'postcss',
+  css: {
+    transformer: isVercel ? 'postcss' : 'lightningcss',
   },
   build: {
-    cssMinify: false, // Prevent lightningcss minification
+    cssMinify: isVercel ? false : 'lightningcss',
+  },
+  optimizeDeps: {
+    exclude: ['lightningcss'],
   },
 })

@@ -61,15 +61,18 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Floating Group Image (bottom-left of the girl image) */}
-          <div className="absolute bottom-[3%] right-[-10%] left-[-10%] md:left-[-10%] lg:left-[-15%] rounded-xl overflow-hidden shadow-xl w-50 md:w-72 lg:w-[300px]">
-            <img
-              src={groupImage}
-              alt="group"
-              className="w-[500px] h-full object-cover"
-            />
-          
-          </div>
+         {/* Floating Group Image (bottom-left of the girl image) */}
+{/* Floating Group Image (bottom-left of the girl image) */}
+<div className="absolute bottom-[-12%] right-[-40%] left-[-40%] md:left-[-10%] lg:left-[-15%] rounded-xl overflow-hidden shadow-xl w-50 md:w-72 lg:w-[300px]">
+  <img
+    src={groupImage}
+    alt="group"
+    className="w-[500px] h-full object-cover"
+  />
+</div>
+
+
+
         </div>
       </div>
     </section>

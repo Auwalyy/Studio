@@ -6,6 +6,7 @@ import CoursesSection from '../components/CourseSection';
 import Course from '../components/Course';
 import Testimonials from '../components/Testimoials';
 import Footer from '../components/Footer';
+import InstructorSection from '../components/InstructorSection';
 
 const Landing = () => {
   return (
@@ -15,8 +16,10 @@ const Landing = () => {
       <AboutSection />
       <CoursesSection />
       <Course />
+      <InstructorSection />
       <Testimonials />
       <Footer />
+    
     </div>
   )
 }
